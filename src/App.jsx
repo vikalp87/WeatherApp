@@ -9,7 +9,7 @@ async function fetchdata()
 {
   
   try{
-    let resp=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputvalue}&units=metric&appid=a46de9eef3f3899b403da9e130f1c43c`)
+    let resp=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputvalue}&units=metric&appid=${api}`)
   
     const result=await resp.json();
      setdata(result);
