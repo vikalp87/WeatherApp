@@ -5,6 +5,7 @@ function App() {
   const[data,setdata]=useState({cod:404})
   const [value,setvalue]=useState("");
   var api=import.meta.env.REACT_APP_API_KEY;
+  console.log(api);
 async function fetchdata()
 {
   
